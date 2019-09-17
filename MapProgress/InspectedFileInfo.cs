@@ -10,5 +10,6 @@ namespace MapProgress
     class InspectedFileInfo
     {
         public string StIDSecID { get; set; }
+        // Created a class in case I want to store more info.
     }
 }

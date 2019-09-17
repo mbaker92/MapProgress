@@ -14,11 +14,11 @@ namespace MapProgress
         public string BegLocatio { get; set; }
         public string EndLocatio { get; set; }
         public string coordinates { get; set; }
-        public List<string> SphereicalCoor;
+        public List<string> Coor;
 
         public GeoJSON()
         {
-            SphereicalCoor = new List<string>();
+            Coor = new List<string>();
             StIDSecID = StreetName = BegLocatio = EndLocatio = coordinates = "";
 
         }
@@ -39,7 +39,7 @@ namespace MapProgress
             {
                 if (TempList[i] != "0.0")
                 {
-                    SphereicalCoor.Add(TempList[i]);
+                    Coor.Add(TempList[i]);
                 }
             }
         }

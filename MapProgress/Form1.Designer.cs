@@ -34,6 +34,8 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             this.Check = new System.Windows.Forms.Button();
+            this.ZoomIn = new System.Windows.Forms.Button();
+            this.ZoomOut = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // gMapControl1
@@ -60,11 +62,11 @@
             this.gMapControl1.ShowTileGridLines = false;
             this.gMapControl1.Size = new System.Drawing.Size(818, 549);
             this.gMapControl1.TabIndex = 0;
-            this.gMapControl1.Zoom = 2D;
+            this.gMapControl1.Zoom = 7D;
             // 
             // KMLFile
             // 
-            this.KMLFile.Location = new System.Drawing.Point(223, 39);
+            this.KMLFile.Location = new System.Drawing.Point(51, 48);
             this.KMLFile.Name = "KMLFile";
             this.KMLFile.Size = new System.Drawing.Size(75, 23);
             this.KMLFile.TabIndex = 1;
@@ -74,7 +76,7 @@
             // 
             // InspectedFile
             // 
-            this.InspectedFile.Location = new System.Drawing.Point(223, 139);
+            this.InspectedFile.Location = new System.Drawing.Point(51, 95);
             this.InspectedFile.Name = "InspectedFile";
             this.InspectedFile.Size = new System.Drawing.Size(91, 23);
             this.InspectedFile.TabIndex = 2;
@@ -92,7 +94,7 @@
             // 
             // Check
             // 
-            this.Check.Location = new System.Drawing.Point(133, 292);
+            this.Check.Location = new System.Drawing.Point(51, 197);
             this.Check.Name = "Check";
             this.Check.Size = new System.Drawing.Size(75, 23);
             this.Check.TabIndex = 3;
@@ -100,17 +102,41 @@
             this.Check.UseVisualStyleBackColor = true;
             this.Check.Click += new System.EventHandler(this.Check_Click);
             // 
+            // ZoomIn
+            // 
+            this.ZoomIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.ZoomIn.Location = new System.Drawing.Point(1072, 35);
+            this.ZoomIn.Name = "ZoomIn";
+            this.ZoomIn.Size = new System.Drawing.Size(50, 41);
+            this.ZoomIn.TabIndex = 4;
+            this.ZoomIn.Text = "+";
+            this.ZoomIn.UseVisualStyleBackColor = true;
+            this.ZoomIn.Click += new System.EventHandler(this.ZoomIn_Click);
+            // 
+            // ZoomOut
+            // 
+            this.ZoomOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.ZoomOut.Location = new System.Drawing.Point(1072, 82);
+            this.ZoomOut.Name = "ZoomOut";
+            this.ZoomOut.Size = new System.Drawing.Size(50, 41);
+            this.ZoomOut.TabIndex = 5;
+            this.ZoomOut.Text = "-";
+            this.ZoomOut.UseVisualStyleBackColor = true;
+            this.ZoomOut.Click += new System.EventHandler(this.ZoomOut_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1150, 605);
+            this.Controls.Add(this.ZoomOut);
+            this.Controls.Add(this.ZoomIn);
             this.Controls.Add(this.Check);
             this.Controls.Add(this.InspectedFile);
             this.Controls.Add(this.KMLFile);
             this.Controls.Add(this.gMapControl1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Map Progress";
             this.ResumeLayout(false);
 
         }
@@ -123,6 +149,8 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.OpenFileDialog openFileDialog2;
         private System.Windows.Forms.Button Check;
+        private System.Windows.Forms.Button ZoomIn;
+        private System.Windows.Forms.Button ZoomOut;
     }
 }
 
