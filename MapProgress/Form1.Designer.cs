@@ -46,7 +46,8 @@
             this.gMapControl1.GrayScaleMode = false;
             this.gMapControl1.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.gMapControl1.LevelsKeepInMemmory = 5;
-            this.gMapControl1.Location = new System.Drawing.Point(320, 27);
+            this.gMapControl1.Location = new System.Drawing.Point(240, 22);
+            this.gMapControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gMapControl1.MarkersEnabled = true;
             this.gMapControl1.MaxZoom = 18;
             this.gMapControl1.MinZoom = 2;
@@ -60,25 +61,27 @@
             this.gMapControl1.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.gMapControl1.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.gMapControl1.ShowTileGridLines = false;
-            this.gMapControl1.Size = new System.Drawing.Size(818, 549);
+            this.gMapControl1.Size = new System.Drawing.Size(614, 446);
             this.gMapControl1.TabIndex = 0;
             this.gMapControl1.Zoom = 7D;
             // 
             // KMLFile
             // 
-            this.KMLFile.Location = new System.Drawing.Point(51, 48);
+            this.KMLFile.Location = new System.Drawing.Point(38, 39);
+            this.KMLFile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.KMLFile.Name = "KMLFile";
-            this.KMLFile.Size = new System.Drawing.Size(75, 23);
+            this.KMLFile.Size = new System.Drawing.Size(78, 22);
             this.KMLFile.TabIndex = 1;
-            this.KMLFile.Text = "KML File";
+            this.KMLFile.Text = "GeoJSON File";
             this.KMLFile.UseVisualStyleBackColor = true;
             this.KMLFile.Click += new System.EventHandler(this.KMLFile_Click);
             // 
             // InspectedFile
             // 
-            this.InspectedFile.Location = new System.Drawing.Point(51, 95);
+            this.InspectedFile.Location = new System.Drawing.Point(38, 77);
+            this.InspectedFile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.InspectedFile.Name = "InspectedFile";
-            this.InspectedFile.Size = new System.Drawing.Size(91, 23);
+            this.InspectedFile.Size = new System.Drawing.Size(78, 23);
             this.InspectedFile.TabIndex = 2;
             this.InspectedFile.Text = "Inspected";
             this.InspectedFile.UseVisualStyleBackColor = true;
@@ -94,9 +97,10 @@
             // 
             // Check
             // 
-            this.Check.Location = new System.Drawing.Point(51, 197);
+            this.Check.Location = new System.Drawing.Point(38, 160);
+            this.Check.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Check.Name = "Check";
-            this.Check.Size = new System.Drawing.Size(75, 23);
+            this.Check.Size = new System.Drawing.Size(56, 19);
             this.Check.TabIndex = 3;
             this.Check.Text = "Check";
             this.Check.UseVisualStyleBackColor = true;
@@ -105,9 +109,10 @@
             // ZoomIn
             // 
             this.ZoomIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.ZoomIn.Location = new System.Drawing.Point(1072, 35);
+            this.ZoomIn.Location = new System.Drawing.Point(804, 28);
+            this.ZoomIn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ZoomIn.Name = "ZoomIn";
-            this.ZoomIn.Size = new System.Drawing.Size(50, 41);
+            this.ZoomIn.Size = new System.Drawing.Size(38, 33);
             this.ZoomIn.TabIndex = 4;
             this.ZoomIn.Text = "+";
             this.ZoomIn.UseVisualStyleBackColor = true;
@@ -116,9 +121,10 @@
             // ZoomOut
             // 
             this.ZoomOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.ZoomOut.Location = new System.Drawing.Point(1072, 82);
+            this.ZoomOut.Location = new System.Drawing.Point(804, 67);
+            this.ZoomOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ZoomOut.Name = "ZoomOut";
-            this.ZoomOut.Size = new System.Drawing.Size(50, 41);
+            this.ZoomOut.Size = new System.Drawing.Size(38, 33);
             this.ZoomOut.TabIndex = 5;
             this.ZoomOut.Text = "-";
             this.ZoomOut.UseVisualStyleBackColor = true;
@@ -126,15 +132,16 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1150, 605);
+            this.ClientSize = new System.Drawing.Size(862, 492);
             this.Controls.Add(this.ZoomOut);
             this.Controls.Add(this.ZoomIn);
             this.Controls.Add(this.Check);
             this.Controls.Add(this.InspectedFile);
             this.Controls.Add(this.KMLFile);
             this.Controls.Add(this.gMapControl1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Map Progress";
             this.ResumeLayout(false);
